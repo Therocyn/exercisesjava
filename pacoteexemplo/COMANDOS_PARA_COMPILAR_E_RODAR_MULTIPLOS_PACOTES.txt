@@ -1,0 +1,17 @@
+Para a explicação a seguir, assumimos um diretório raíz, de onde todos os pacotes e classes da aplicação são acessíveis de forma direta (sem a necessidade de usar "..").
+
+Para compilar as M classes de uma aplicação divida em N pacotes, use 
+"javac <caminho/para/pacote1>/Classe1.java ... <caminho/para/pacoteN>/ClasseM.java"
+
+Para executar a aplicação principal (pós-compilação) que está em <caminho/para/pacoteY>/ClasseX.java use 
+"java <caminho.para.pacoteY>.ClasseX"
+
+Aqui, os caminhos que eram separados por barras - para indicar subdiretórios - são trocados por ".".
+
+Note que as barras que identificam o caminho são "/" em ambiente Linux; enquanto que em ambientes Windows, *pode ser necessário* usar "\". Por simplicidade, opte por nomes de pacotes sem espaços e acentos.
+
+No nosso exemplo, compilamos uma das aplicações (MinhaAplicacaoEmOutroPackage) usando
+"javac contas/ContaBancaria.java teste/MinhaAplicacaoEmOutroPackage.java"
+
+E a executamos usando
+"java teste.MinhaAplicacaoEmOutroPackage"
